@@ -1,0 +1,19 @@
+{
+  "name": "ethernaut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "ethereumjs-wallet": "git+https://github.com/ethereumjs/ethereumjs-wallet.git",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.0",
+    "web3": "^1.0.0-beta.36"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}
