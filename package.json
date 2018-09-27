@@ -7,6 +7,7 @@
     "test": "test"
   },
   "dependencies": {
+    "bip39": "^2.5.0",
     "dotenv": "^6.0.0",
     "ethereumjs-wallet": "^0.6.2",
     "web3": "^1.0.0-beta.36"
