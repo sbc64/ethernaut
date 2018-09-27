@@ -1,18 +1,15 @@
+require('dotenv').config()
 const Web3 = require('web3')
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const hdkey = require('ethereumjs-wallet/hdkey')
+const w3 = new Web3('https://ropsten.infura.io/' + process.env.INFURA_API)
 
-const url = 'https://rinkeby.infura.io/' + process.env.INFURA_API
+const pk = hdkey.fromMasterSeed(
+    process.env.MNEMONIC
+  ).getWallet().getPrivateKey()
 
-
-const provider = new HDWalletProvider(
-  process.env.MNEMONIC,
-  "https://ropsten.infura.io/" + process.env.INFURA_API
-)
-
-const w3 = new Web3(url),
-w3.eth.setProvider(provider)
-
+const account = w3.eth.accounts.privateKeyToAccount(pk)
 
 module.exports = {
+  account,
   w3
 }

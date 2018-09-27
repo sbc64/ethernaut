@@ -1,6 +1,6 @@
 {
     "env": {
-        "browser": true,
+        "node": true,
         "commonjs": true,
         "es6": true
     },
@@ -10,17 +10,8 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-console": ["error", { "allow": ["log", "error"] }],
         "accessor-pairs": "error",
-        "array-bracket-newline": "error",
-        "array-bracket-spacing": "error",
-        "array-callback-return": "error",
-        "array-element-newline": "error",
-        "arrow-body-style": "error",
-        "arrow-parens": "error",
-        "arrow-spacing": "error",
-        "block-scoped-var": "error",
-        "block-spacing": "error",
-        "brace-style": "error",
         "callback-return": "error",
         "camelcase": "error",
         "capitalized-comments": "error",
@@ -34,10 +25,7 @@
         "consistent-this": "error",
         "curly": "error",
         "default-case": "error",
-        "dot-location": "error",
-        "dot-notation": "error",
         "eol-last": "error",
-        "eqeqeq": "error",
         "func-call-spacing": "error",
         "func-name-matching": "error",
         "func-names": "error",
@@ -62,10 +50,6 @@
             "error",
             "unix"
         ],
-        "lines-around-comment": "error",
-        "lines-around-directive": "error",
-        "lines-between-class-members": "error",
-        "max-classes-per-file": "error",
         "max-depth": "error",
         "max-len": "error",
         "max-lines": "error",
@@ -78,10 +62,6 @@
         "multiline-ternary": "error",
         "new-cap": "error",
         "new-parens": "error",
-        "newline-after-var": [
-            "error",
-            "always"
-        ],
         "newline-before-return": "error",
         "newline-per-chained-call": "error",
         "no-alert": "error",
@@ -173,10 +153,8 @@
         "no-useless-constructor": "error",
         "no-useless-rename": "error",
         "no-useless-return": "error",
-        "no-var": "error",
         "no-void": "error",
         "no-warning-comments": "error",
-        "no-whitespace-before-property": "error",
         "no-with": "error",
         "nonblock-statement-body-position": "error",
         "object-curly-newline": "error",
@@ -187,8 +165,6 @@
         "one-var-declaration-per-line": "error",
         "operator-assignment": "error",
         "operator-linebreak": "error",
-        "padded-blocks": "error",
-        "padding-line-between-statements": "error",
         "prefer-arrow-callback": "error",
         "prefer-const": "error",
         "prefer-destructuring": "error",
@@ -235,7 +211,6 @@
             "never"
         ],
         "valid-jsdoc": "error",
-        "vars-on-top": "error",
         "wrap-iife": "error",
         "wrap-regex": "error",
         "yield-star-spacing": "error",
