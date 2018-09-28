@@ -1,5 +1,5 @@
-var CoinFlip = artifacts.require("./CoinFlip.sol");
+var TelephoneCaller = artifacts.require("./TelephoneCaller.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(CoinFlip);
+  deployer.deploy(TelephoneCaller);
 };
